@@ -58,13 +58,23 @@ cd eco-mart
 npm install
 ```
 
-4. Start the development server:
+4. Create a .env file in the root directory and add the following environment variables:
+
+```js
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=your_nextauth_secret
+```
+
+5. Start the development server:
 
 ```js
 npm run dev
 ```
 
-5. The app will run on http://localhost:3000
+6. The app will run on http://localhost:3000
 
 ## 💡 Author
 
