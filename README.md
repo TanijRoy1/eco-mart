@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌱 EcoMart – Eco-Friendly Product Marketplace
 
-## Getting Started
+![EcoMart Home Page](/public/images/ecomartHome.png);
 
-First, run the development server:
+EcoMart is a modern full-stack web application where users can explore and manage eco-friendly products.  
+The project focuses on clean UI, performance, and beginner-friendly architecture using **Next.js (App Router)**, **Tailwind CSS**, and **MongoDB** with a **mock authentication system**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 💡 Live Features Overview
+
+- Browse eco-friendly products
+- View detailed product information
+- Protected route for adding products
+- Mock authentication using cookies
+- Responsive landing pages with reusable components
+- Skeleton loaders for better UX
+
+---
+
+## 🚀 Live Demo
+
+- **Live Site:** 🔗 [View Deployed App]()
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js (App Router), React, Tailwind CSS
+- **Backend:** Node.js, Express
+- **Database:** MongoDB
+- **Authentication:** Mock auth (cookies)
+- **UI Enhancements:** React Icons, Hot Toast
+- **Image Hosting:** Unsplash (external URLs)
+
+---
+
+## ⚙️ Installation & Local Setup
+
+1. Clone the frontend repository:
+
+```js
+git clone https://github.com/TanijRoy1/eco-mart.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate to the project folder:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```js
+cd eco-mart
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Install dependencies:
 
-## Learn More
+```js
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Start the development server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```js
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+5. The app will run on http://localhost:3000
 
-## Deploy on Vercel
+## 💡 Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+👤 **Tanij Roy**  
+🔗 [GitHub Profile](https://github.com/TanijRoy1)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---

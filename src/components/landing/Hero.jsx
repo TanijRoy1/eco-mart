@@ -4,14 +4,14 @@ import MyContainer from "../MyContainer";
 
 const Hero = () => {
   return (
-    <section className="bg-base-100">
+    <section className="bg-base-100 overflow-hidden">
       <MyContainer className="py-24 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
         <div className="space-y-7">
           <span className="badge badge-primary badge-outline">
             🌱 Eco-Friendly Marketplace
           </span>
 
-          <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-base-content leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-base-content leading-tight">
             Shop Sustainable <br />
             <span className="text-primary">Live Greener</span>
           </h1>
@@ -32,11 +32,11 @@ const Hero = () => {
                rounded-md
                transition-colors duration-200"
             >
-              Browse Products
+              Browse Items
             </Link>
 
             <Link
-              href="/login"
+              href="/add-item"
               className="inline-flex items-center justify-center
                border border-primary
                text-primary
@@ -46,7 +46,7 @@ const Hero = () => {
                rounded-md
                transition-colors duration-200"
             >
-              Add Product
+              Add Item
             </Link>
           </div>
 

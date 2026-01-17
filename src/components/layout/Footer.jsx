@@ -1,11 +1,12 @@
 import Link from "next/link";
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import MyContainer from "../MyContainer";
 import Logo from "../Logo";
 
 const Footer = () => {
   return (
-    <footer className=" py-16 bg-base-200 border-t border-base-300 mt-20">
+    <footer className=" py-16 bg-base-200 border-t border-base-300">
       <MyContainer>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="space-y-4">
@@ -90,7 +91,7 @@ const Footer = () => {
                 className="btn btn-sm btn-outline btn-primary"
                 aria-label="Twitter"
               >
-                <FaTwitter />
+                <FaXTwitter />
               </a>
               <a
                 href="#"

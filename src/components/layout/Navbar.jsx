@@ -176,7 +176,7 @@ const Navbar = () => {
                     handleLogout();
                     setOpen(false);
                   }}
-                  className="btn btn-error btn-sm mt-2"
+                  className="border border-primary text-center text-primary hover:bg-primary cursor-pointer hover:text-white px-3 py-1 rounded transition"
                 >
                   Logout
                 </button>
@@ -184,7 +184,7 @@ const Navbar = () => {
                 <Link
                   href="/login"
                   onClick={() => setOpen(false)}
-                  className="btn btn-primary btn-sm mt-2"
+                  className="border border-primary text-primary text-center hover:bg-primary hover:text-base-100 cursor-pointer font-medium px-3 py-1 rounded transition"
                 >
                   Login
                 </Link>

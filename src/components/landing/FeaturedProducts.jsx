@@ -22,7 +22,7 @@ export default async function FeaturedProducts() {
       <MyContainer>
         <div className="mb-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
           <div>
-            <h2 className="text-3xl font-bold text-base-content">
+            <h2 className="sm:text-3xl text-2xl font-bold text-base-content">
               Featured Eco Products
             </h2>
             <p className="text-base-content/70 mt-2 max-w-xl">
