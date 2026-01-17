@@ -1,9 +1,9 @@
 # 🌱 EcoMart – Eco-Friendly Product Marketplace
 
-![EcoMart Home Page](/public/images/ecomartHome.png);
+![EcoMart Home Page](/public/images/ecomartHome.png)
 
 EcoMart is a modern full-stack web application where users can explore and manage eco-friendly products.  
-The project focuses on clean UI, performance, and beginner-friendly architecture using **Next.js (App Router)**, **Tailwind CSS**, and **MongoDB** with a **mock authentication system**.
+The project focuses on clean UI, performance, and beginner-friendly architecture using **Next.js (App Router)**, **Tailwind CSS**, and **MongoDB**, with both **Google Authentication (NextAuth)** and a **mock authentication system** for learning purposes.
 
 ---
 
@@ -12,15 +12,16 @@ The project focuses on clean UI, performance, and beginner-friendly architecture
 - Browse eco-friendly products
 - View detailed product information
 - Protected route for adding products
-- Mock authentication using cookies
+- Google Login using NextAuth
+- Mock authentication using cookies (for demo & practice)
 - Responsive landing pages with reusable components
-- Skeleton loaders for better UX
+- Skeleton loaders for improved user experience
 
 ---
 
 ## 🚀 Live Demo
 
-- **Live Site:** 🔗 [View Deployed App]()
+- **Live Site:** 🔗 [View Deployed App](https://eco-mart-blond.vercel.app)
 
 ---
 
@@ -29,9 +30,11 @@ The project focuses on clean UI, performance, and beginner-friendly architecture
 - **Frontend:** Next.js (App Router), React, Tailwind CSS
 - **Backend:** Node.js, Express
 - **Database:** MongoDB
-- **Authentication:** Mock auth (cookies)
-- **UI Enhancements:** React Icons, Hot Toast
-- **Image Hosting:** Unsplash (external URLs)
+- **Authentication:**
+  - Google OAuth (NextAuth)
+  - Mock authentication (cookies)
+- **UI Enhancements:** React Icons, React Hot Toast
+- **Image Hosting:** Unsplash (external image URLs)
 
 ---
 

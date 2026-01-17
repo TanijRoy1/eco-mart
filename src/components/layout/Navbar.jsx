@@ -1,24 +1,31 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import MyContainer from "../MyContainer";
 import Logo from "../Logo";
+import { useSession, signOut } from "next-auth/react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const { data: session } = useSession();
+  // console.log(session);
 
-  const [isAuth, setIsAuth] = useState(() =>
-    typeof document !== "undefined"
-      ? document.cookie.includes("auth=true")
-      : false
-  );
+  const [isMockAuth, setIsMockAuth] = useState(false);
+  useEffect(() => {
+    const hasMockAuth = document.cookie.includes("auth=true");
+    setIsMockAuth(hasMockAuth);
+  }, []);
 
-  const handleLogout = () => {
+  const isAuth = isMockAuth || !!session;
+
+  const handleLogout = async () => {
     document.cookie = "auth=; path=/; max-age=0";
-    setIsAuth(false);
+    setIsMockAuth(false);
+
+    await signOut({ redirect: false });
   };
 
   return (
@@ -78,14 +85,14 @@ const Navbar = () => {
             {isAuth ? (
               <button
                 onClick={handleLogout}
-                className="border border-primary text-primary hover:bg-primary cursor-pointer hover:text-white px-3 py-1 rounded transition"
+                className="border border-primary text-primary hover:bg-primary cursor-pointer hover:text-base-100 px-3 py-1 rounded transition"
               >
                 Logout
               </button>
             ) : (
               <Link
                 href="/login"
-                className="border border-primary text-primary hover:bg-primary hover:text-base-100 cursor-pointer font-medium px-3 py-1 rounded transition"
+                className="border border-primary  bg-primary text-base-100 hover:opacity-90 cursor-pointer font-medium px-3 py-1 rounded transition"
               >
                 Login
               </Link>

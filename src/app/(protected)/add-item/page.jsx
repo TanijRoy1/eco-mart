@@ -3,17 +3,22 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
+import { useSession } from "next-auth/react";
 
 const AddItemPage = () => {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
+  const { data: session, status } = useSession();
 
   useEffect(() => {
-    const isAuth = document.cookie.includes("auth=true");
-    if (!isAuth) {
+    const isMockAuth = document.cookie.includes("auth=true");
+
+    if (status === "loading") return;
+
+    if (!isMockAuth && !session) {
       router.replace("/login");
     }
-  }, [router]);
+  }, [session, status, router]);
 
   const handleAddItem = async (e) => {
     e.preventDefault();
@@ -35,7 +40,7 @@ const AddItemPage = () => {
     // console.log(productData);
 
     try {
-      await fetch("http://localhost:5000/products", {
+      await fetch("https://eco-mart-server-drab.vercel.app/products", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(productData),

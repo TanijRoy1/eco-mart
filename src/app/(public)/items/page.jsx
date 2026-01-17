@@ -2,7 +2,7 @@ import React from "react";
 import ProductCard from "./ProductCard";
 import MyContainer from "@/components/MyContainer";
 const getProducts = async () => {
-  const res = await fetch("http://localhost:5000/products", {
+  const res = await fetch("https://eco-mart-server-drab.vercel.app/products", {
     cache: "no-store",
   });
 

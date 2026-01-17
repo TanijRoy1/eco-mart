@@ -3,7 +3,7 @@ import Link from "next/link";
 import MyContainer from "../MyContainer";
 
 const getFeaturedProducts = async () => {
-  const res = await fetch(`http://localhost:5000/products?limit=${8}`, {
+  const res = await fetch(`https://eco-mart-server-drab.vercel.app/products?limit=${8}`, {
     cache: "no-store",
   });
 
